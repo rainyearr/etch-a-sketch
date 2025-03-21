@@ -9,5 +9,11 @@ for (let i = 0; i < 16 * 16; i++) {
   newDiv.textContent = i + 1;
   newDiv.classList.add("grid-item");
 
+  //Add hover effect
+
+  newDiv.addEventListener("mouseover", () => {
+    newDiv.style.backgroundColor = "black";
+  });
+
   grid.appendChild(newDiv);
 }
