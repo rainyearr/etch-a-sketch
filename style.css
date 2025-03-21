@@ -1,3 +1,23 @@
-#container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.grid-container {
   display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  /* border: 2px solid black; */
+}
+
+.grid-item {
+  width: calc(100vw / 16);
+  height: calc(100vh / 16);
+  /* border: 1px solid #ccc; */
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
